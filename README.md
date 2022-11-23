@@ -11,7 +11,7 @@ function isFile(path: string): Promise<boolean>
 ### Use
 
 ```
-import isFile from 'isFile'
+import isFile from '@aibulat/isFile'
 
 const res = isFile("filename.txt");
 ```
