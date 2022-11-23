@@ -5,6 +5,6 @@
         "emitDeclarationOnly": true,
         "isolatedModules": false,
         "declaration": true,
-        "declarationMap": true
+        "declarationMap": false
     }
 }

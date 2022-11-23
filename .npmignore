@@ -1,5 +1,11 @@
 src
 
+tsconfig.json
+tsc-types.json
+test.js
+package-lock.json
+
+
 # Logs
 logs
 *.log
