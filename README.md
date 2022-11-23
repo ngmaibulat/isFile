@@ -13,5 +13,7 @@ function isFile(path: string): Promise<boolean>
 ```
 import isFile from '@aibulat/isFile'
 
-const res = isFile("filename.txt");
+const res = await isFile('filename.txt')
+
+console.log(res)
 ```
