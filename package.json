@@ -1,6 +1,6 @@
 {
     "name": "@aibulat/isfile",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "check if file exists",
     "main": "dist/esm/index.js",
     "types": "./dist/esm/index.d.ts",
