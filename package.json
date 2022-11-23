@@ -8,6 +8,7 @@
     "scripts": {
         "test": "node --test",
         "build": "esbuild src/*.ts --outdir=dist/esm --format=esm --platform=node --target=es2022",
+        "build:watch": "esbuild src/*.ts --outdir=dist/esm --format=esm --platform=node --target=es2022 --watch",
         "build:types": "tsc -p tsc-types.json"
     },
     "repository": {

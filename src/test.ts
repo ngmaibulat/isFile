@@ -1,13 +1,33 @@
+import test from 'node:test'
+import assert from 'node:assert'
 import isFile from './index.js'
 
-console.log(await isFile('no-such file'))
+test('file package.json exists', async () => {
+    const res = await isFile('package.json')
+    assert.equal(res, true)
+})
 
-console.log(await isFile('package.json'))
+test('file /bin/ls exists', async () => {
+    const res = await isFile('/bin/ls')
+    assert.equal(res, true)
+})
 
-console.log(await isFile('.'))
+test('dir: . is not a file', async () => {
+    const res = await isFile('.')
+    assert.equal(res, false)
+})
 
-console.log(await isFile('..'))
+test('dir: .. is not a file', async () => {
+    const res = await isFile('..')
+    assert.equal(res, false)
+})
 
-console.log(await isFile('/'))
+test('dir: / is not a file', async () => {
+    const res = await isFile('/')
+    assert.equal(res, false)
+})
 
-console.log(await isFile('/bin/ls'))
+test('file no-such-file does not exist', async () => {
+    const res = await isFile('no-such-file')
+    assert.equal(res, false)
+})
