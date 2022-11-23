@@ -1,0 +1,35 @@
+{
+    "name": "isfile",
+    "version": "0.0.1",
+    "description": "check if file exists",
+    "main": "dist/esm/index.js",
+    "types": "./dist/esm/index.d.ts",
+    "type": "module",
+    "scripts": {
+        "test": "node --test",
+        "build": "esbuild src/*.ts --outdir=dist/esm --format=esm --platform=node --target=es2022",
+        "build:types": "tsc -p tsc-types.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ngmaibulat/isFile.git"
+    },
+    "keywords": [
+        "file",
+        "exists",
+        "fs",
+        "isfile",
+        "is-file",
+        "check file"
+    ],
+    "author": "Aibulat",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ngmaibulat/isFile/issues"
+    },
+    "homepage": "https://github.com/ngmaibulat/isFile#readme",
+    "devDependencies": {
+        "@types/node": "^18.11.9",
+        "esbuild": "^0.15.15"
+    }
+}
